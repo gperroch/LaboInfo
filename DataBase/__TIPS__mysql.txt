@@ -1,0 +1,16 @@
+service mysql start
+service mysql restart
+service mysql stop
+service mysql reload
+service mysql force-reload
+
+service --status-all
+netstat -a |grep mysql
+vim /etc/mysql/mariadb.cnf
+
+SELECT * FROM RECYCLEBIN;
+SELECT * FROM USER_RECYCLEBIN;
+
+shell> mysql db_name < text_file
+mysql> source file_name
+mysql> \. file_name

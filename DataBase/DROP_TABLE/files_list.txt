@@ -1,0 +1,7 @@
+drop_table_crawlingresultsrelation.sql
+drop_table_machinetoperson.sql
+drop_table_events.sql
+drop_table_crawlingrecords.sql
+drop_table_machines.sql
+drop_table_persons.sql
+drop_table_places.sql

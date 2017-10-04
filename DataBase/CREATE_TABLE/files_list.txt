@@ -1,0 +1,8 @@
+create_table_crawlingrecords.sql
+create_table_crawlingresultsrelation.sql
+create_table_events.sql
+create_table_machines.sql
+create_table_machinetoperson.sql
+create_table_persons.sql
+create_table_places.sql
+foreign_keys.sql
