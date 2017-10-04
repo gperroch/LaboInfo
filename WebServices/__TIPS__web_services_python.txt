@@ -1,0 +1,2 @@
+package soaplib		=> http://soaplib.github.io/soaplib/2_0/pages/helloworld.html
+package suds		=> https://fedoraproject.org/wiki/Infrastructure/Fedorahosted-retirement

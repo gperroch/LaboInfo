@@ -14,3 +14,8 @@ SELECT * FROM USER_RECYCLEBIN;
 shell> mysql db_name < text_file
 mysql> source file_name
 mysql> \. file_name
+
+
+mysql> use mysql
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
