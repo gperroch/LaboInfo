@@ -1,0 +1,3 @@
+groupName	groupDesc	groupHome	usersTrackerId	groupTrackerId	usersFieldId	groupFieldId
+Anonymous	Public users not logged	NULL	NULL	NULL	NULL	NULL
+Registered	Users logged into the system	NULL	NULL	NULL	NULL	NULL

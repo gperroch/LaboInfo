@@ -1,0 +1,6 @@
+Lancer '/etc/init.d/mysql start';
+lancer 'mysql --local-infile=1'; // Pour pouvoir charger en base les fichiers locaux via LOAD DATA LOCAL INFILE...
+SHOW DATABASES pour lister les db existantes;
+USE database_name;
+SHOW TABlES;
+LOAD DATA LOCAL INFILE filename INTO TABLE tablename FIELDS TERMINATED BY ';';

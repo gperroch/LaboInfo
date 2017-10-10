@@ -1,0 +1,50 @@
+tagId	taglabel	taginsert	tagicon	tagcategory
+1	bold	__text__	images/ed_format_bold.gif	wiki
+2	italic	''text''	images/ed_format_italic.gif	wiki
+3	underline	===text===	images/ed_format_underline.gif	wiki
+4	table	||r1c1|r1c2||r2c1|r2c2||	images/insert_table.gif	wiki
+5	table new	||r1c1|r1c2\nr2c1|r2c2||	images/insert_table.gif	wiki
+6	external link	[http://example.com|text]	images/ed_link.gif	wiki
+7	wiki link	((text))	images/ed_copy.gif	wiki
+8	heading1	!text	images/ed_custom.gif	wiki
+9	title bar	-=text=-	images/fullscreen_maximize.gif	wiki
+10	box	^text^	images/ed_about.gif	wiki
+11	rss feed	{rss id= }	images/ico_link.gif	wiki
+12	dynamic content	{content id= }	images/book.gif	wiki
+13	tagline	{cookie}	images/footprint.gif	wiki
+14	hr	---	images/ed_hr.gif	wiki
+15	center text	::text::	images/ed_align_center.gif	wiki
+16	colored text	~~#FF0000:text~~	images/fontfamily.gif	wiki
+17	dynamic variable	%text%	images/book.gif	wiki
+18	image	{img src= width= height= align= desc= link= }	images/ed_image.gif	wiki
+19	New wms Metadata	METADATA\n\t\t"wms_name" "myname"\n \t"wms_srs" "EPSG:4326"\n \t"wms_server_version" " "\n \t"wms_layers" "mylayers"\n \t"wms_request" "myrequest"\n \t"wms_format" " "\n \t"wms_time" " "\n END	img/icons/admin_metatags.png	maps
+20	New Class	CLASS\n EXPRESSION ()\n SYMBOL 0\n OUTLINECOLOR\n COLOR\n NAME "myclass" \nEND #end of class	img/icons/mini_triangle.gif	maps
+21	New Projection	PROJECTION\n "init=epsg:4326"\nEND	images/ico_mode.gif	maps
+22	New Query	#\n# Start of query definitions\n#\n QUERYMAP\n STATUS ON\n STYLE HILITE\nEND	img/icons/questions.gif	maps
+23	New Scalebar	#\n# Start of scalebar\n#\nSCALEBAR\n IMAGECOLOR 255 255 255\n STYLE 1\n SIZE 400 2\n COLOR 0 0 0\n UNITS KILOMETERS\n INTERVALS 5\n STATUS ON\nEND	img/icons/desc_length.gif	maps
+24	New Layer	LAYER\n NAME\n TYPE\n STATUS ON\n DATA "mydata"\nEND #end of layer	images/ed_copy.gif	maps
+25	New Label	LABEL\n COLOR\n ANGLE\n FONT arial\n TYPE TRUETYPE\n POSITION\n PARTIALS TRUE\n SIZE 6\n BUFFER 0\n OUTLINECOLOR \nEND #end of label	img/icons/fontfamily.gif	maps
+26	New Reference	#\n#start of reference\n#\n REFERENCE\n SIZE 120 60\n STATUS ON\n EXTENT -180 -90 182 88\n OUTLINECOLOR 255 0 0\n IMAGE "myimagedata"\n COLOR -1 -1 -1\nEND	images/ed_image.gif	maps
+27	New Legend	#\n#start of Legend\n#\n LEGEND\n KEYSIZE 18 12\n POSTLABELCACHE TRUE\n STATUS ON\nEND	images/ed_about.gif	maps
+28	New Web	#\n# Start of web interface definition\n#\nWEB\n TEMPLATE "myfile/url"\n MINSCALE 1000\n MAXSCALE 40000\n IMAGEPATH "myimagepath"\n IMAGEURL "mypath"\nEND	img/icons/ico_link.gif	maps
+29	New Outputformat	OUTPUTFORMAT\n NAME\n DRIVER " "\n MIMETYPE "myimagetype"\n IMAGEMODE RGB\n EXTENSION "png"\nEND	img/icons/opera.gif	maps
+30	New Mapfile	#\n# Start of mapfile\n#\nNAME MYMAPFLE\n STATUS ON\nSIZE \nEXTENT\nUNITS \nSHAPEPATH " "\nIMAGETYPE " "\nFONTSET " "\nIMAGECOLOR -1 -1 -1\n\n#remove this text and add objects here\n\nEND # end of mapfile	img/icons/global.gif	maps
+31	bold	__text__	images/ed_format_bold.gif	newsletters
+32	italic	''text''	images/ed_format_italic.gif	newsletters
+33	underline	===text===	images/ed_format_underline.gif	newsletters
+34	external link	[http://example.com|text|nocache]	images/ed_link.gif	newsletters
+35	heading1	!text	images/ed_custom.gif	newsletters
+36	hr	---	images/ed_hr.gif	newsletters
+37	center text	::text::	images/ed_align_center.gif	newsletters
+38	colored text	~~#FF0000:text~~	images/fontfamily.gif	newsletters
+39	image	{img src= width= height= align= desc= link= }	images/ed_image.gif	newsletters
+40	New wms Metadata	METADATA\n\t\t"wms_name" "myname"\n\t\t"wms_srs" "EPSG:4326"\n\t"wms_server_version" " "\n\t"wms_layers" "mylayers"\n\t"wms_request" "myrequest"\n\t"wms_format" " "\n\t"wms_time" " "\n END	img/icons/admin_metatags.png	maps
+41	New Class	CLASS\n EXPRESSION ()\n SYMBOL 0\n OUTLINECOLOR\n COLOR\n  NAME "myclass"\nEND #end of class	img/icons/mini_triangle.gif	maps
+42	New Query	#\n#Start of query definitions\n QUERYMAP\n STATUS ON\n STYLE HILITE\nEND	img/icons/question.gif	maps
+43	New Scalebar	#\n#start of scalebar\nSCALEBAR\n IMAGECOLOR 255 255 255\n STYLE 1\n SIZE 400 2\n COLOR 0 0 0\n  UNITS KILOMETERS\n INTERVALS 5\n STATUS ON\nEND	img/icons/desc_lenght.gif	maps
+44	New Layer	LAYER\n NAME "mylayer"\n TYPE\n STATUS ON\n DATA "mydata"\nEND #end of layer	img/ed_copy.gif	maps
+45	New Label	LABEL\n  COLOR\n ANGLE\n FONT arial\n TYPE TRUETYPE\n  POSITION\n  PARTIALS TRUE\n  SIZE 6\n  BUFFER 0\n OUTLINECOLOR\nEND #end of label	img/icons/fontfamily.gif	maps
+46	New Reference	#\n#start of reference\nREFERENCE\n SIZE 120 60\n STATUS ON\n  EXTENT -180 -90 182 88\n OUTLINECOLOR 255 0 0\n IMAGE "myimagedata"\nCOLOR -1 -1 -1\nEND	images/ed_image.gif	maps
+47	New Legend	#\n#start of legend\n#\nLEGENDr\n KEYSIZE 18 12\n POSTLABELCACHE TRUE\n STATUS ON\nEND	images/ed_about.gif	maps
+48	New Web	#\n#Start of web interface definition\n#\nWEB\n TEMPLATE "myfile/url"\n MINSCALE 1000\n MAXSCALE 40000\n IMAGEPATH "myimagepath"\n IMAGEURL "mypath"\nEND	img/icons/ico_link.gif	maps
+49	New Mapfile	#\n#Start of mapfile\n#\nNAME MYMAPFILE\n STATUS ON\nSIZE \nEXTENT\n UNITS\nSHAPEPATH " "\nIMAGETYPE " "\nFONTSET " "\nIMAGECOLOR -1 -1 -1\n\n#remove this text and add objects here\n\nEND # end of mapfile	img/icons/global.gif	maps

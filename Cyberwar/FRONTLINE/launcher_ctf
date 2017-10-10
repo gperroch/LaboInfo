@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export PROCEDURE=2
+echo "2" > /root/bin/PROCEDURE
+The_Great_Wall_of_Fire
+/etc/init.d/postgresql start
+msfconsole

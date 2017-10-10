@@ -1,0 +1,4 @@
+# Nmap 7.01 scan initiated Sat Dec  3 20:57:11 2016 as: nmap -Pn -A -oA ctftry3 212.129.39.172
+Host: 212.129.39.172 (212-129-39-172.rev.poneytelecom.eu)	Status: Up
+Host: 212.129.39.172 (212-129-39-172.rev.poneytelecom.eu)	Status: Up
+# Nmap done at Sat Dec  3 21:00:39 2016 -- 1 IP address (1 host up) scanned in 207.66 seconds

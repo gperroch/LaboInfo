@@ -1,0 +1,2 @@
+page_id	pageName	hits	data	description	lastModif	comment	version	user	ip	flag	points	votes	cache	wiki_cache	cache_timestamp	pageRank	creator	page_size	lang	lockedby	is_html	created
+1	HomePage	22			1271407536	Tiki initialization	1	admin	0.0.0.0	NULL	NULL	NULL	NULL	NULL	NULL	NULL	admin	0	NULL	NULL	0	1271407536

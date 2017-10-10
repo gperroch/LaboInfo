@@ -1,0 +1,20 @@
+#!/bin/bash
+
+printf "\033[32m\t\tHOST INFORMATIONS\033[0m\n"
+hostnamectl
+
+printf "\n\033[32m\t\tFILE SYSTEM DISKS USAGE\033[0m\n"
+df -h
+
+printf "\n\033[32m\t\tSYSTEM'S MEMORY\033[0m\n"
+free
+
+printf "\n\033[32m\t\tSYSTEM'S UPTIME\033[0m\n"
+uptime
+
+printf "\n\033[32m\t\tMOST CONSUMING PROCESSES\033[0m\n"
+ps -eo %mem,%cpu,comm --sort=-%mem | head -n 8
+
+printf "\n\033[32m\t\tACTIVE CONNECTIONS\033[0m\n"
+netstat -t
+netstat -u

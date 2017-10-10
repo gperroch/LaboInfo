@@ -1,0 +1,4 @@
+Write some script to make the arp table static, allowing to set the gateway manually. This way you can be protected against arp-spoofing.
+Analyser les daemons et processus -> kill ceux qui sont suspects.
+Analyser les outils permettant d'effectuer le nettoyage des daemons et processus pour éliminer tout root-kit.
+Manager de la table arp (localhost) => ajouter/enlever des couples (ip/mac), vider la table, la rendre statique.

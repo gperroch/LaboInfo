@@ -1,0 +1,2 @@
+menuId	name	description	type
+42	Application menu	Main extensive navigation menu	d

@@ -1,0 +1,4 @@
+lancer '/etc/init.d/postgres start'
+psql postgres -h 127.0.0.1 -d postgres		=> connection to local database "postgres" as user "postgres"
+psql 'username' -h 'server_addr' -d 'db_name'
+

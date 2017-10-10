@@ -1,0 +1,21 @@
+<report>
+<event>
+	<title>Reconnaissance Tikiwiki</title>
+	<content>Indentifiants collectés dans la base de données MySQL</content>
+	<extra>Username: admin</extra>
+	<extra>Password: admin</extra>
+	<content>Essaie de la démo tikiwiki sur demosite.center/tiki</content>
+	<extra>Service FTP</extra>
+	<extra>Information sur la version courante de tikiwiki</extra>
+	<extra>General -> Log SQL queries</extra>
+	<extra>General settings -> Use proxy</extra>
+	<extra>General settings -> Session storage location</extra>
+	<extra>File galleries feature -> Upload files</extra>
+	<extra>Smarty debug console (many informations...)</extra>
+</event>
+<event>
+	<title>...</title>
+	<content>...</content>
+	<extra>...</extra>
+</event>
+</report>

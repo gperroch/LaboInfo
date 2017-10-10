@@ -1,0 +1,8 @@
+modId	name
+1	wiki
+2	forums
+3	image galleries
+4	file galleries
+5	directory
+6	workflow
+7	charts

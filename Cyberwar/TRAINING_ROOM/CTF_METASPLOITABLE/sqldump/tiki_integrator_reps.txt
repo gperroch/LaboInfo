@@ -1,0 +1,2 @@
+repID	name	path	start_page	css_file	visibility	cacheable	expiration	description
+1	Doxygened (1.3.4) Documentation		index.html	doxygen.css	n	y	0	Use this repository as rule source for all your repositories based on doxygened docs. To setup yours just add new repository and copy rules from this repository :)

@@ -1,0 +1,44 @@
+4 type of "filter conditions":
+	- "traditional" severity and facility based selectors
+	- property-based filters
+	- expression-based filters
+	- BSD-style blocks
+
+selector = "facility" + "." + "priority"
+	Describred in syslog(3). (See /usr/include/syslog.h)
+Facility = auth, authpriv, cron, daemon, kern, lpr, mail, mark, new, security (same as auth), syslog, user, uucp, local0 -> local7
+The facility specifies the subsystem that produces the message (i.e. all mail programs log with the mail facility (LOG_MAIL)).
+Priority = debug, info, notice, warning (/warn), err (/error), crit, alert, emerg (/panic).
+
+In rsyslog:
+	- "*" is all facilities or all priorities.
+	- "none".
+	- "," allow to specify multiple facilities with the same priority.
+
+Property-based filters (unique to rsyslog). 
+	Allow to filter on any property (list of all supported properties in property replacer documentation).
+	Syntax:	":property,[!]compare-operation,'value'"
+	Compare operations supported:
+		- contains (wildcards not supported)
+		- isequal
+		- startswith
+		- regex
+		- ereregex
+	Values:
+		- quoted string
+		- case-sensitive
+
+Expression-based filters
+	Syntax: "if expr then action-part-of-selector-line"
+		- See expression documentation for more details about expr
+		- action is regular action (like /var/log/logfile to write in a file)
+
+BSD-style block
+	Not supported since rsyslog.v7+
+
+Examples and notes:
+	- if $msg contains "error" then /var/log/errfile #expression-based filter
+	- *.* /var/log/file1 #traditional filter
+	- if $syslogfacility-text = "local0" and $msg startswith "DEVNAME" and ($msg contains "error1" or $msg contains "error0")
+	then /var/log/somelog
+	- See RFC5424 for informations about numerical values for severity and facilities.

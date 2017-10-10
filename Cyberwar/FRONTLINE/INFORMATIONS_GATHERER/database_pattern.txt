@@ -1,0 +1,23 @@
+DATABASE		TABLES			FIELDS			TYPE		EXTRA
+
+informations_gatherer	persons			idPerson		int		pk, not null, auto increment
+						first_name		varchar(30)
+						last_name		varchar(30)
+
+			places			idPlace			int		pk, not null, auto increment
+						name			varchar(30)
+						description		text
+
+			locations		idLocation		int		pk, not null, auto increment
+						idPlace			int		fk
+						idPerson		int		fk
+						date_start		date
+						date_end		date
+
+			relationships		idRelationship		int		pk, not null, auto increment
+						idPersonOne		int		fk
+						idPersonTwo		int		fk
+						levelRelationship	int
+						description		text
+
+			

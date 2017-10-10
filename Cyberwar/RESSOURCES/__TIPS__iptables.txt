@@ -1,0 +1,24 @@
+ 1. Create a new chain (-N).
+
+  2. Delete an empty chain (-X).
+
+  3. Change the policy for a built-in chain. (-P).
+
+  4. List the rules in a chain (-L).
+
+  5. Flush the rules out of a chain (-F).
+
+  6. Zero the packet and byte counters on all rules in a chain (-Z).
+
+  There are several ways to manipulate rules inside a chain:
+
+
+  1. Append a new rule to a chain (-A).
+
+  2. Insert a new rule at some position in a chain (-I).
+
+  3. Replace a rule at some position in a chain (-R).
+
+  4. Delete a rule at some position in a chain, or the first that
+     matches (-D).
+

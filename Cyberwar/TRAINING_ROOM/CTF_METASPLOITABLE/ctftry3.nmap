@@ -1,0 +1,19 @@
+# Nmap 7.01 scan initiated Sat Dec  3 20:57:11 2016 as: nmap -Pn -A -oA ctftry3 212.129.39.172
+Nmap scan report for 212-129-39-172.rev.poneytelecom.eu (212.129.39.172)
+Host is up (0.072s latency).
+All 1000 scanned ports on 212-129-39-172.rev.poneytelecom.eu (212.129.39.172) are filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 7 hops
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   131.88 ms 10.18.254.254
+2   131.21 ms nat-1.42.fr (10.60.1.11)
+3   131.81 ms dc3.42.fr (62.210.35.1)
+4   131.63 ms 195.154.1.174
+5   131.56 ms a9k1-45x-s44-2.dc3.poneytelecom.eu (195.154.1.104)
+6   131.72 ms 45x-s32-1-a9k1.dc3.poneytelecom.eu (195.154.1.51)
+7   131.26 ms 212-129-39-172.rev.poneytelecom.eu (212.129.39.172)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec  3 21:00:39 2016 -- 1 IP address (1 host up) scanned in 207.66 seconds

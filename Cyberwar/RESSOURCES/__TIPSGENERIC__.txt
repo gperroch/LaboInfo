@@ -1,0 +1,7 @@
+netbios-ssn		=> 	NetBIOS is a protocol used for File and Print Sharing
+				under all current versions of Windows. While this in itself is not a problem,
+				the way that the protocol is implemented can be.
+				There are a number of vulnerabilities associated with leaving this port open.
+
+afp			=>	Apple Filling Protocol (543)
+rtsp			=>	Real Time Streaming Protocol (554)

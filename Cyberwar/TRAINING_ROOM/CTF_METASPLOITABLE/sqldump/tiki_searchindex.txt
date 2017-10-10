@@ -1,0 +1,2 @@
+searchword	location	page	count	last_update
+homepage	wiki	HomePage	1	1481388392

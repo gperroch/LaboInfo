@@ -1,0 +1,44 @@
+The property replacer.
+A syslog message has a number of well defined properties. Each of these properties can be accessed and manipulated by the property replacer.
+Syslog message properties are used in the templates. Example: %property:fromChar:toChar:options%
+	- fromChar and toChar are used to extract substring. Use a '$' in place of the toChar value to extract to the end of the string.
+	Regex are supported. Put a 'R' in fromChar and the actual regex in toChar. Possible to specify some params after the R (<regexp-type>,
+	<submatch>,<nomatch>,<match-number>) (regexp-type=BRE/ERE) (example: %msg:R,ERE,1,FIELD:for (vlan[0-9]\*):--end%)
+	Extraction can be done on fields. Place a 'F' in fromChar. The delimiter is specified right after the F as the ascii code of the char
+	(F,44 for colon separated fields).
+	Property options:
+		- uppercase
+		- lowercase
+		- fixed-width (pad the missing part with spaces)
+		- json (encode the value so that it can be used in a json field)
+		- jsonf
+		- csv (format the resulting field in csv format)
+		- drop-last-lf
+		- date-utc
+		- date-mysql
+		- date-rfc3164
+		- date-rfc3164-buggyday
+		- date-rfc3339
+		- date-unixtimestamp
+		- date-year
+		- date-month
+		- date-day
+		- date-hour
+		- date-minute
+		- date-second
+		- date-subsecond
+		- date-tzoffshour
+		- date-tzoffsmin
+		- date-tzoffsdirection
+		- date-ordinal
+		- date-week
+		- date-wday
+		- date-wdayname
+		- escape-cc
+		- space-cc
+		- drop-cc
+		- compressspace
+		- sp-if-no-1st-sp
+		- secpath-drop
+		- secpath-replace
+

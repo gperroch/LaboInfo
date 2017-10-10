@@ -1,0 +1,149 @@
+Data types:
+	- Typeless language
+	- Conversions are automatically done
+	- Use & to concatenate strings
+
+Expressions:
+	- Support all regular operators
+	- Precedence of operations:
+		- Expressions in parenthesis
+		- not, unary minus
+		- *,/,%
+		- +,-,&
+		- ==,!=,<>,<,>,<=,>=,contains,startswith
+		- and
+		- or
+
+Functions:
+	- getenv(str)
+	- strlen(str)
+	- tolower(str)
+	- cstr(expr)
+	- cnum(expr)
+	- wrap(str, wrapper_str)
+	- wrap(str, wrapper_str, escaper_str)
+	- replace(str, substring_to_replace, replace_with)
+	- re_match(expr, regex)
+	- re_extract(expr, re, match, submatch, no-match)
+	- field(str, delim, matchnumber)
+	- prifilt(constant)
+	- dyn_inc(bucket_name_litteral_string, str) (Read more in Dynamic Stats)
+	- lookup(table_name_litteral_string, key) (Read more in Lookup Tables)
+
+Control structures:
+	- if:
+		if (expr) then {
+			if expr then action;
+			action(...)
+		}
+
+	- if/else-if/else:
+		if (expr) then {
+		...
+		} else-if (expr) then {
+		...
+		} else {
+		...
+		}
+
+	- foreach:
+		foreach ($.i in $.collection) do {
+		...
+		}
+	
+	- call:
+		call rulesetname
+
+	- continue
+
+Configuration objects:
+	- action() : describes actions to be carried out.
+	- global() : set global configuration parameters.
+	- input() : gather messages for rsyslog processing.
+	- module() : loads plugins.
+	- parser() : define custom parser objects.
+	- timezone() : define timezone settings.
+
+Variable (Property) types:
+	- All rsyslog properties can be used in RainerScripts.
+	- Supports local variables.
+	- Local variables are local to the current message but are not message properties.
+	- Message json properties and local variables can be modified by set, unset, reset.
+	- Local variables start with "$." (. denotes the root).
+	- Both json properties and local variables may contain an arbitrary deep path before the final element (! as separator character):
+		- Example: "$!path1!path2!path3!varname" same as "$.path1!path2!path3!varname"
+	- set:
+		- Merges the new value if both are objects.
+		- Ignores the new value if it's not an object but previous value is an object.
+		- Reset value if old one's is not an object.
+	- unset
+	- reset : assign the new value no matter what.
+
+Lookup tables:
+	...
+
+General queue parameters:
+	- They can be used together with the following statements:
+		- action()
+		- ruleset()
+		- main_queue()
+	- Read Queues documentation
+	- queue.filename
+	- queue.spoolDirectory
+	- queue.size (in number of messages)
+	- queue.dequeuebatchsize
+	- queue.maxdiskspace
+	- queue.highwatermark
+	- queue.lowwatermark
+	- queue.fulldelaymark
+	- queue.lightdelaymark
+	- queue.discardmark
+	- queue.discardseverity
+	- queue.checkpointinterval
+	- queue.syncqueuefiles
+	- queue.samplinginterval
+	- queue.type
+	- queue.workerthreads
+	- queue.timeoutshutdown
+	- queue.timeoutactioncompletion
+	- queue.timeoutenqueue
+	- queue.timeoutworkerthreadshutdown
+	- queue.workerthreadminimummessages
+	- queue.maxfilesize
+	- queue.saveonshutdown
+	- queue.dequeueslowdown
+	- queue.dequeuetimebegin
+	- queue.dequeuetimeend
+	- queue.samplinginterval
+
+global() configuration object:
+	- Permits to set global parameters. Each parameter can only be set once and not re-set after.
+	- action.reportSuspension
+	- action.reportSuspensionContinuation
+	- workDirectory
+	- dropMsgsWithMaliciousDNSPtrRecords
+	- localHostname
+	- preserveFQDN
+	- defaulNetstreamDriverCAFile
+	- defaultNetstreamDriverKeyFile
+	- defaultNetstreamDriverCertFile
+	- debug.gnutls
+	- processInternalMessages
+	- stdlog.channelspec
+	- defaultNetstreamDriver
+	- maxMessageSize
+	- janitorInterval
+	- debug.onShutdown
+	- debug.logFile
+	- net.ipprotocol
+	- net.aclAddHostnameOnFail
+	- net.aclResolveHostname
+	- net.enableDNS
+	- net.permitACLWarning
+	- parser.parseHostnameAndTag
+	- senders.keepTrack
+	- senders.timeoutAfter
+	- senders.reportGoneAway
+	- senders.reportNew
+	- debug.unloadModules
+	- environment

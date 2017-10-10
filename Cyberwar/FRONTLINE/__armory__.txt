@@ -1,0 +1,16 @@
+launcher_war (/root/Cyberwar/FRONTLINE)
+	launch many scripts to prepare to the cyberwar
+	should be launch in first before launcher_ctf
+
+launcher_ctf (/root/Cyberwar/FRONTLINE)
+	update the env var PROCEDURE to 2 (CTF procedure)
+	run The_Great_Wall_of_Fire
+	start the postgresql daemon
+	run msfconsole
+
+The_Great_Wall_of_Fire (/root/bin)
+	iptables rules
+	run regularly with cron
+	dependent of environnement variables such as PROCEDURE
+
+

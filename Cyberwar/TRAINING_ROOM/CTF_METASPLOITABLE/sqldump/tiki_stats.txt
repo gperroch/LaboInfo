@@ -1,0 +1,4 @@
+object	type	day	hits
+HomePage	wiki	1271390400	3
+HomePage	wiki	1271649600	16
+HomePage	wiki	1481346000	3

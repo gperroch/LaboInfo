@@ -1,0 +1,8 @@
+INITIALISATION_SCRIPTS contains scripts used during the initialisation procedure of the cyber-war state.
+They are meant to work without human interaction.
+- Computer isolation
+- System maintenance: integrity verification, repairs
+- Security: virus tracking, security bot
+- Extra lucidity: network survey, scenarii anticipation algorythms, alerts displaying
+- Commodity: music/podcasts, daily report
+

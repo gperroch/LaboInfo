@@ -1,0 +1,44 @@
+Lancer postregsl database : /etc/init.d/postgresql start
+			ou: service postgresql start
+Check le service postgersql avec : service postgresql status
+La database est démarrée et permettra d'enregistrer les données utiles au cours de l'opération.
+Dans msfconsole:
+	db_status		=> état de la database
+	help "command"		=> info sur une commande de msf
+	search reverse_tcp	=> trouver les exploits disponibles pour du reverse tcp
+	use ***			=> utilise le pluggin spécifié (trouvable grace à search ***)
+	back 			=> sortir du pluggin
+
+	show ***		=> donnes des infos sur le pluggin utilisé
+	show options		=> montre les options du pluggin courant
+	set OPTION VALUE	=> attribut une valeur à une option du pluggin (ex: set lhost 192.168.0.254)
+	setg OPTION VALUE	=> attribut la valeuer à l'option pour tous les pluggins (variable globale, pareil que set -g)
+	unset OPTION		=> réinitialise la valeur de l'option pour le pluggin courant
+	unsetg OPTION		=> réinitialise la valeur de l'option pour tous les pluggins
+	show targets		=> liste les cibles vulnérables à l'exploit
+	show advanced		=> liste les options avancées du pluggin
+	show evasion		=> ???
+
+	show payloads		=> liste les payloads compatibles avec l'exploit
+	! stager : établit une connexion entre la machine exploitante et la machine exploitée
+	! stages : morceaux de payload upload par le stager pour établir la connexion
+	! payload encryption : certains payloads seront interceptés par les antivirus. Utiliser "generate" pour les modifier.
+	generate		=> génère un payload pour l'exploit
+	generate -b ***		=> générer un payload en évitant les caractères spécifiés (ex: generate -b \xff\x50)
+	show encoders		=> liste les encoders disponibles pour le payload de l'xploit courant (pour le rendre moins détectable)
+	generate -e ***		=> génère un payload en utilisant l'encoder spécifié (ex: x86/shikata_ga_nai)
+
+	! workspace : les workspaces permettent de travailler sur différents "projets"
+	workspace		=> liste les workspaces
+	hosts			=> liste les hotes enregistrés en db
+	services		=> liste les services découverts par scan enregistrés en db
+	db_import		=> importer le résultat d'un scan dans la db du workspace (le type de fichier est automatiquement detecté)
+	db_export		=> inverse de db_import
+	
+	! meterpreter : payload particulier offrant un accès optimisé à la machine cible. Uniquement dans la RAM, trés discret.
+	background		=> met la session meterpreter actuelle en background
+	sessions -i ***		=> intéragir avec la session spécifiée
+	! check les différentes commandes disponibles dans meterpreter (download, upload, etc)
+
+	load wmap		=> charge wmap, scanner de failles web
+	db_rebuild_cache	=> rebuild la cache de msf (utile pour les recherches plus rapides)	

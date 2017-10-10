@@ -1,0 +1,5 @@
+type	use_ratings	show_pre_publ	show_post_expire	heading_only	allow_comments	show_image	show_avatar	show_author	show_pubdate	show_expdate	show_reads	show_size	show_topline	show_subtitle	show_linkto	show_image_caption	show_lang	creator_edit	comment_can_rate_article
+Article	NULL	NULL	y	NULL	y	y	NULL	y	y	NULL	y	y	n	n	n	n	n	NULL	NULL
+Review	y	NULL	y	NULL	y	y	NULL	y	y	NULL	y	y	n	n	n	n	n	NULL	NULL
+Event	NULL	NULL	n	NULL	y	y	NULL	y	y	NULL	y	y	n	n	n	n	n	NULL	NULL
+Classified	NULL	NULL	n	y	n	y	NULL	y	y	NULL	y	y	n	n	n	n	n	NULL	NULL

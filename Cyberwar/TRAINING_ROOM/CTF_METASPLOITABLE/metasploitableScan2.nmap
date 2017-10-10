@@ -1,0 +1,72 @@
+# Nmap 7.01 scan initiated Sun Nov 20 20:19:08 2016 as: nmap -A -oA metasploitableScan2 -oX /root/.msf5/local/msf-db-nmap-20161120-14010-1tlcg0k.xml 212.83.142.83
+Nmap scan report for ctf06.root-me.org (212.83.142.83)
+Host is up (0.10s latency).
+Not shown: 988 closed ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         ProFTPD 1.3.1
+|_ftp-bounce: no banner
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)
+|_  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)
+23/tcp   open  telnet      Linux telnetd
+25/tcp   open  smtp
+| smtp-commands: mwinf5d03 hello [80.13.198.204], pleased to meet you, HELP, AUTH LOGIN PLAIN, SIZE 44000000, ENHANCEDSTATUSCODES, 8BITMIME, OK, 
+|_ 2.0.0 This is ME ESMTP service help 2.0.0 Topics: 2.0.0 HELO EHLO HELP VRFY 2.0.0 MAIL RCPT DATA NOOP 2.0.0 RSET QUIT AUTH 2.0.0 To contact postmaster send email to postmaster@orange.fr. 2.0.0 For local information send email to Postmaster at your site. 2.0.0 end of HELP info 
+53/tcp   open  domain      ISC BIND 9.3.4-P1
+| dns-nsid: 
+|_  bind.version: 9.3.4-P1
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) PHP/5.2.4-2ubuntu5.10 with Suhosin-Patch)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.10 with Suhosin-Patch
+|_http-title: Site doesn't have a title (text/html).
+139/tcp  open  netbios-ssn Samba smbd 3.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X (workgroup: WORKGROUP)
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+| mysql-info: 
+|   Protocol: 53
+|   Version: .0.51a-3ubuntu5
+|   Thread ID: 8
+|   Capabilities flags: 43564
+|   Some Capabilities: LongColumnFlag, ConnectWithDatabase, SwitchToSSLAfterHandshake, SupportsTransactions, Speaks41ProtocolNew, Support41Auth, SupportsCompression
+|   Status: Autocommit
+|_  Salt: ph9!99U|4+yB{gs.)"kw
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+|_http-favicon: Apache Tomcat
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Apache Tomcat/5.5
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port25-TCP:V=7.01%I=7%D=11/20%Time=5831F736%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,25,"220\x20mwinf5d03\x20ME\x20ESMTP\x20server\x20ready\r\n")%r(Hello,
+SF:46,"220\x20mwinf5d03\x20ME\x20ESMTP\x20server\x20ready\r\n501\x20EHLO\x
+SF:20requires\x20valid\x20address\r\n");
+Device type: general purpose|WAP|remote management|router|broadband router
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (96%), Dell embedded (92%), Supermicro embedded (92%), Enterasys embedded (92%), Cisco embedded (92%), Asus embedded (91%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:2.4.7 cpe:/o:linux:linux_kernel:2.4.30 cpe:/h:dell:remote_access_card:6 cpe:/o:linux:linux_kernel:2.6.24 cpe:/o:supermicro:intelligent_platform_management_firmware cpe:/o:linux:linux_kernel:2.4 cpe:/h:asus:rt-ac66u
+Aggressive OS guesses: Linux 2.6.8 - 2.6.30 (96%), Linux 2.6.22 (95%), Linux 2.6.24 (Ubuntu 8.04) (94%), Linux 2.6.31 - 2.6.35 (93%), Linux 2.6.9 - 2.6.27 (93%), Linux 2.6.27 - 2.6.28 (93%), Linux 2.4.7 (93%), Linux 2.4.21 - 2.4.31 (likely embedded) (92%), OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), Dell Integrated Remote Access Controller (iDRAC6) (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.20-Debian)
+|   NetBIOS computer name: 
+|   Workgroup: WORKGROUP
+|_  System time: 2016-11-20T14:22:09-05:00
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT       ADDRESS
+1   12.97 ms  172.16.91.254
+2   200.94 ms 79.143.138.153
+3   200.92 ms online-dc2.par.franceix.net (37.49.237.111)
+4   218.21 ms 45x-s32-1-a9k1.dc3.poneytelecom.eu (195.154.1.53)
+5   184.42 ms ctf06.root-me.org (212.83.142.83)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 20 20:20:11 2016 -- 1 IP address (1 host up) scanned in 63.50 seconds

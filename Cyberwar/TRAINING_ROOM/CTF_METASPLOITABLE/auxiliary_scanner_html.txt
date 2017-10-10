@@ -1,0 +1,37 @@
+   auxiliary/scanner/http/crawler                                                     normal  Web Site Crawler
+   auxiliary/scanner/http/dir_listing                                                 normal  HTTP Directory Listing Scanner
+   auxiliary/scanner/http/dir_scanner                                                 normal  HTTP Directory Scanner
+   auxiliary/scanner/http/error_sql_injection                                         normal  HTTP Error Based SQL Injection Scanner
+   auxiliary/scanner/http/file_same_name_dir                                          normal  HTTP File Same Name Directory Scanner
+   auxiliary/scanner/http/files_dir                                                   normal  HTTP Interesting File Scanner
+   auxiliary/scanner/http/frontpage_login                                             normal  FrontPage Server Extensions Anonymous Login Scanner
+   auxiliary/scanner/http/git_scanner                                                 normal  HTTP Git Scanner
+   auxiliary/scanner/http/host_header_injection                                       normal  HTTP Host Header Injection Detection
+   auxiliary/scanner/http/http_header                                                 normal  HTTP Header Detection
+   auxiliary/scanner/http/http_login                                                  normal  HTTP Login Utility
+   auxiliary/scanner/http/http_version                                                normal  HTTP Version Detection
+   auxiliary/scanner/http/jboss_status                                                normal  JBoss Status Servlet Information Gathering
+   auxiliary/scanner/http/jboss_vulnscan                                              normal  JBoss Vulnerability Scanner
+   auxiliary/scanner/http/mod_negotiation_brute                                       normal  Apache HTTPD mod_negotiation Filename Bruter
+   auxiliary/scanner/http/mod_negotiation_scanner                                     normal  Apache HTTPD mod_negotiation Scanner
+   auxiliary/scanner/http/nginx_source_disclosure                                     normal  Nginx Source Code Disclosure/Download
+   auxiliary/scanner/http/open_proxy                                                  normal  HTTP Open Proxy Detection
+   auxiliary/scanner/http/ntlm_info_enumeration                                       normal  Host Information Enumeration via NTLM Authentication
+   auxiliary/scanner/http/options                                                     normal  HTTP Options Detection
+   auxiliary/scanner/http/prev_dir_same_name_file                                     normal  HTTP Previous Directory File Scanner
+   auxiliary/scanner/http/replace_ext                                                 normal  HTTP File Extension Scanner
+   auxiliary/scanner/http/rewrite_proxy_bypass                                        normal  Apache Reverse Proxy Bypass Vulnerability Scanner
+   auxiliary/scanner/http/robots_txt                                                  normal  HTTP Robots.txt Content Scanner
+   auxiliary/scanner/http/scraper                                                     normal  HTTP Page Scraper
+   auxiliary/scanner/http/soap_xml                                                    normal  HTTP SOAP Verb/Noun Brute Force Scanner
+   auxiliary/scanner/http/ssl                                                         normal  HTTP SSL Certificate Information
+   auxiliary/scanner/http/ssl_version                                2014-10-14       normal  HTTP SSL/TLS Version Detection (POODLE scanner)
+   auxiliary/scanner/http/svn_scanner                                                 normal  HTTP Subversion Scanner
+   auxiliary/scanner/http/tomcat_enum                                                 normal  Apache Tomcat User Enumeration
+   auxiliary/scanner/http/tomcat_mgr_login                                            normal  Tomcat Application Manager Login Utility
+   auxiliary/scanner/http/trace_axd                                                   normal  HTTP trace.axd Content Scanner
+   auxiliary/scanner/http/web_vulndb                                                  normal  HTTP Vuln Scanner
+   auxiliary/scanner/http/webdav_internal_ip                                          normal  HTTP WebDAV Internal IP Scanner
+   auxiliary/scanner/http/webdav_scanner                                              normal  HTTP WebDAV Scanner
+   auxiliary/scanner/http/webdav_website_content                                      normal  HTTP WebDAV Website Content Scanner
+

@@ -1,0 +1,25 @@
+<report>
+<event>
+	<title>Briefing CTF Metasploitable, 3e tentative</title>
+	<content>Elements à disposition:</content>
+	<extra>Accès db Mysql (root/root)</extra>
+	<extra>Accès supposé à tikiwiki (admin/admin)</extra>
+	<content>Voies empruntables</content>
+	<extra>Exploit tikiwiki_upload_exec (tikiwiki 15.1-)</extra>
+	<extra>Exploit tikiwiki_unserialize_exec (3 conditions à remplir + tikiwiki v8.3 + php > 5.3.4)</extra>
+	<extra>Exploit tikiwiki_jhot_exec (tikiwiki v1.9.4)</extra>
+	<extra>auxiliary/scanner/http/crawler : crawl sur /tiki</extra>
+	<extra>Utilisation des identifiants tikiwiki</extra>
+	<extra>Exploitation du service FTP de tikiwiki</extra>
+	<extra>Exploitation du service de File Galleries de tikiwiki</extra>
+	<extra>Analyse de la Smarty Debug Console</extra>
+	<extra>Utilisation plus approfondie des identifiants MySQL</extra>
+	<extra>Download complet des données de la database MySQL</extra>
+	<extra>mysql -u root -proot -h X.X.X.X -e 'select * from table_name;' tikiwiki195 > loots.txt</extra>
+</event>
+<event>
+	<title></title>
+	<content></content>
+	<extra></extra>
+</event>
+</report>

@@ -1,0 +1,24 @@
+<report>
+<event>
+	<title>1ère tentative</title>
+	<content>Scan de la machine</content>
+	<content>Tous les exploits tentés ont échoués</content>
+</event>
+<event>
+	<title>2e tentative</title>
+	<content>Exploit tikidblib réussi, informations concernant la base de données MySQL récoltées</content>
+	<extra>{"Nom de la base" : "tikiwiki195",</extra>
+	<extra> "Nom d'utilisateur" : "root",</extra>
+	<extra> "Mot de passe" : "root"}</extra>
+	<content>Connection au service MySQL avec les identifiants récoltés réussie</content>
+	<content>Fouille rapide des tables, récolte d'identifiants dans la table users_users</content>
+	<extra>{"Nom d'utilisateur" : "admin",</extra>
+	<extra> "Mot de passe" : "admin"}</extra>
+	<content>=> Identifiants supposés du compte administrateur du tikiwiki de la machine</content>
+</event>
+<event>
+	<title>...</title>
+	<content>...</content>
+	<extra>...</extra>
+</event>
+</report>

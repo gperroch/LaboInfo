@@ -1,0 +1,4 @@
+# Nmap 7.01 scan initiated Mon Nov 21 22:24:54 2016 as: nmap -Pn -sS -oG logScanRunner253 172.16.91.253
+Host: 172.16.91.253 ()	Status: Up
+Host: 172.16.91.253 ()	Status: Up
+# Nmap done at Mon Nov 21 22:24:55 2016 -- 1 IP address (1 host up) scanned in 2.63 seconds

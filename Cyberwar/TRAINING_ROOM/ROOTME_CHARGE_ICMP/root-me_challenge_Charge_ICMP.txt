@@ -1,0 +1,55 @@
+Pas de variations dans les header ethernet.
+Header IP : 
+		- première requête et sa reponse sont plus courtes que les autres
+		- variations de la checksum uniquement pour les reply : de 5B81 à 5B90 + 5C10
+		- variation des token Identification pour les reply (null pour les requests) : sens inverse de la checksum, de 9CEC à 9CFC
+Header ICMP :
+		- checksum différent pour tous les packets
+DATA :
+		- bunch of shit
+
+A savoir qu'un hash MD5 est une chaine de 32(33?) caracteres, qu'il y a 34 packets (17 requests 17 responses) et que la première request
+et la première response sont les seules à avoir une taille différente des autres.
+
+Tableau des checksum ICMP
+
+	REQUEST		REPLY
+	76C3
+	D0E8
+	9722
+			7EC3
+	34C6
+			D8E8
+	D18D
+			9F22
+	5C1F
+			3CC6
+	0392
+			D98D
+	AEF5
+			641F
+			0B92
+	A77C
+	10E0
+			B6F5
+	0152
+			AF7C
+			18E0
+	9CBE
+	DDC2
+			0952
+			A4BE
+	AC67
+	D67F
+			E5C2
+			B467
+	F894
+	172C
+			DE7F
+			0095
+			1F2C
+
+checksum des 16 requests (sans la premiere) : D0 E8 97 22 34 C6 D1 8D 5C 1F 03 92 AE F5 A7 7C 10 E0 01 52 9C BE DD C2 AC 67 D6 7F F8 94 17 2C
+résultat en ascii : de la merde, c'est pas ça
+Caractères ascii imprimable en hexa : de 21 à 7E
+Le code doit se trouver dans la data des icmp. 

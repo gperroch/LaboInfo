@@ -1,0 +1,2 @@
+name	title	data	parse
+mnu_application_menu	Menu	{menu id=42}	n

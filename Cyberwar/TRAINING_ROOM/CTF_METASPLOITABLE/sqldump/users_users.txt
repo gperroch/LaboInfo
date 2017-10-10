@@ -1,0 +1,2 @@
+userId	email	login	password	provpass	default_group	lastLogin	currentLogin	registrationDate	challenge	pass_due	hash	created	avatarName	avatarSize	avatarFileType	avatarData	avatarLibName	avatarType	score
+1		admin			NULL	1481386699	1481386718	NULL	NULL	1567700318	8c46dd4123bc8da1ef847b762b77d186	NULL	NULL	NULL	NULL	NULL	NULL	NULL	0

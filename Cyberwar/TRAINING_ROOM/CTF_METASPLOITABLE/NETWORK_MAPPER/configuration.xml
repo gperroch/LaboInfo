@@ -1,0 +1,34 @@
+<scan-runner>
+	<targets>
+		<target value=""/>
+		<target value=""/>
+		<target value=""/>
+		<target value=""/>
+		<target value=""/>
+		<target value=""/>
+	<targets>
+
+	<scanner name="nmap" path="" id="1">
+		<option name="ping-type" value="-PM"/>
+		<option name="scan-type" value="-sA"/>
+		<option name="output" value="-oX"/>
+		<option name="output-file" value="logscan"/>
+		<option name="verbosity" value=""/>
+		<option name="" value=""/>
+		<option name="" value=""/>
+		<option name="" value=""/>
+		<option name="" value=""/>
+	</scanner>
+	
+	<scanner name="scanner-python" path="" id="2">
+		<option name="ping-type" value=""/>
+		<option name="scan-type" value=""/>
+		<option name="output" value=""/>
+		<option name="output-file" value=""/>
+		<option name="verbosity" value=""/>
+		<option name="" value=""/>
+		<option name="" value=""/>
+		<option name="" value=""/>
+		<option name="" value=""/>
+	</scanner>
+</scan-runner>
